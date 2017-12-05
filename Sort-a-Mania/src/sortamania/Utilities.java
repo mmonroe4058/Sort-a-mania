@@ -48,7 +48,7 @@ public class Utilities
 			int y = x/2;
 			median = list[y];
 		}
-		
+		 
 		return median;
 	}
 	

@@ -1,5 +1,5 @@
  /* Miriam Monroe and Ramisha Sarwar
- * Sort-a-Mania
+ * Sort-a-Mania 
  * Miriam is editing these files
  */
 package sortamania;
