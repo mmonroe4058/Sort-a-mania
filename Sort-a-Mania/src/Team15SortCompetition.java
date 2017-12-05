@@ -1,6 +1,7 @@
 /*
  * Miriam Monroe and Ramisha Sarwar
  * Sort-a-Mania
+ * Ramisha is editing these files
  */
 
 public class Team15SortCompetition {
@@ -40,5 +41,11 @@ public class Team15SortCompetition {
 		String[] things = mergeSort(arr);
 		
 		
+	}
+	public static int challengeThree(int[] list)
+	{
+		int median = 0;
+		
+		return median;
 	}
 }
