@@ -1,3 +1,5 @@
+import sortamania.Utilities;
+
 /*
  * Miriam Monroe and Ramisha Sarwar
  * Sort-a-Mania
@@ -8,7 +10,11 @@ public class Team15SortCompetition {
 	//utilities myUtil = new utilities();
 	public static void main (String[] args)
 	{
-
+		/*String[] list = {"Apple", "Zebra", "Grape", "Quart", "Phone"};
+		System.out.println(challengeTwo(list, "Grape"));*/
+		
+		int[] list = {4, 7, 8, 9, 3, 10};
+		System.out.print(challengeThree(list));
 	}
 	public static double challengeOne(int[] list)
 	{
@@ -38,14 +44,16 @@ public class Team15SortCompetition {
 	
 	public static int challengeTwo(String[] arr, String str)
 	{
-		String[] things = mergeSort(arr);
+		int index = 0;
+		String[] things = Utilities.mergeSort(arr);
+		index = Utilities.binarySearch(things, 0, arr.length-1, str);
 		
-		
+		return index;
 	}
-	public static int challengeThree(int[] list)
+	public static double challengeThree(int[] list)
 	{
-		int median = 0;
-		
+		utilities.bubbleSort(list);
+		double median = utilities.median(list);
 		return median;
 	}
 }
