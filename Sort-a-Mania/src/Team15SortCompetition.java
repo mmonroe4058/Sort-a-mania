@@ -56,4 +56,9 @@ public class Team15SortCompetition {
 		double median = utilities.median(list);
 		return median;
 	}
+	
+	public static int challengeFive()
+	{
+		
+	}
 }
