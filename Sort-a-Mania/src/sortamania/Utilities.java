@@ -21,6 +21,8 @@ public class Utilities
 			}
 		}
 	}
+	
+	
 	public static void swap(int[] arr, int i, int j)
 	{
 		int temp = arr[i];
@@ -52,6 +54,29 @@ public class Utilities
 		return median;
 	}
 	
+	public static double medianD(double[] list)
+	{
+		double median = 0;
+		if(list.length % 2 == 0)
+		{
+			int x = list.length - 2;
+			int y = x/2;
+			int i =  y + 1;
+			double e = list[y];
+			double f = list[i];
+			
+			median = (e + f)/2;
+		}
+		
+		if(list.length % 2 == 1)
+		{
+			int x = list.length - 1;
+			int y = x/2;
+			median = list[y];
+		}
+		 
+		return median;
+	}
 
 public static String[] merge(String[] list1, String[] list2)
 {
