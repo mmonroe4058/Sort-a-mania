@@ -13,27 +13,9 @@ public class Team15SortCompetition {
 	}
 	public static double challengeOne(int[] list)
 	{
-		Utilities.bubbleSort(list);
-		
 		double median = 0;
-		
-		if(list.length % 2 == 0)
-		{
-			int x = list.length - 2;
-			int y = x/2;
-			int i =  y + 1;
-			double e = list[y];
-			double f = list[i];
-			
-			median = (e + f)/2;
-		}
-		
-		if(list.length % 2 == 1)
-		{
-			int x = list.length - 1;
-			int y = x/2;
-			median = list[y];
-		}
+		Utilities.bubbleSort(list);
+		median = Utilities.median(list);
 		return median;
 	}
 	
@@ -45,4 +27,6 @@ public class Team15SortCompetition {
 		
 		return index;
 	}
+	
+	public static int challengeFour()
 }
